@@ -1,0 +1,9 @@
+<div class="">
+  <ul>
+    <% @articles.each do |article| %>
+      <a href="/articles/<%= article.id%>/show"><li><%= article.title%></li></a>
+    <% end %>
+  </ul>
+
+  <a href="/articles/new">Create an Article</a>
+</div>
